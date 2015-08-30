@@ -1,0 +1,21 @@
+void setup () {
+  size (500,500);
+}
+
+void draw (){
+  //Se crea la condicional para el valor en x y Y para el rectángulo
+  for (int posx=100; posx < 390; posx=posx+10) {
+    for (int posy=100; posy < 390; posy=posy+10) {
+  // se crea un for, con una variable diferente para no afectar los valores de las líneas    
+    for (int linea=100; linea <400; linea=linea+10) {
+  //creo las lineas  
+  line (linea,0,linea,500);
+  line (0,linea,500,linea);
+  // creo el rectángulo
+  fill(random(0,255),random(0,210), random(0,255));
+  rect (posx,posy, 10,10);
+  
+  }
+    }
+}
+}
